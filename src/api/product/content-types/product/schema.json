@@ -40,6 +40,12 @@
     },
     "stock": {
       "type": "integer"
+    },
+    "artist": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::artist.artist",
+      "inversedBy": "products"
     }
   }
 }
